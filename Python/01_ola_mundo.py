@@ -3,7 +3,7 @@
 Conceitos: print, variáveis, input, f-strings
 """
 
-# 1. O clássico
+# 1. Olá Mundo
 print("Olá, Mundo!")
 
 # 2. Variáveis

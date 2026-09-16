@@ -51,7 +51,7 @@ class palindromo {
         System.out.println("\n--- Exemplos ---");
         String[] exemplos = {"arara", "Python", "A base do teto desaba", "ovo", "radar"};
         for (String ex : exemplos) {
-            String marca = ehPalindromoLimpo(ex) ? "✅" : "❌";
+            String marca = ehPalindromoLimpo(ex) ? "Sim ->" : "Não ->";
             System.out.println(marca + " " + ex);
         }
 

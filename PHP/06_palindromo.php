@@ -41,6 +41,6 @@ echo "\"$texto\" é palíndromo (limpo)?  " . (ehPalindromoLimpo($texto) ? "Sim"
 echo "\n--- Exemplos ---\n";
 $exemplos = ["arara", "Python", "A base do teto desaba", "ovo", "radar"];
 foreach ($exemplos as $ex) {
-    $marca = ehPalindromoLimpo($ex) ? "✅" : "❌";
+    $marca = ehPalindromoLimpo($ex) ? "Sim ->" : "Não ->";
     echo "$marca $ex\n";
 }

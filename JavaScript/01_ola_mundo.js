@@ -3,7 +3,7 @@
  * Conceitos: console.log, let, const, tipos primitivos, template strings
  */
 
-// 1. O clássico
+// 1. Olá Mundo
 console.log("Olá, Mundo!");
 
 // 2. Variáveis

@@ -8,9 +8,9 @@ class par_ou_impar {
         int numero = scanner.nextInt();
 
         if (numero % 2 == 0) {
-            System.out.println("O número " + numero + " é PAR.");
+            System.out.println("O número " + numero + " é Par!");
         } else {
-            System.out.println("O número " + numero + " é ÍMPAR.");
+            System.out.println("O número " + numero + " é Ímpar!");
         }
 
         // Bônus: verificar de 1 a 10

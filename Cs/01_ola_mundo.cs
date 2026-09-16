@@ -1,10 +1,8 @@
-using System;
-
 public class OlaMundo
 {
     public static void Main(string[] args)
     {
-        // 1. O clássico
+        // 1. Olá Mundo
         Console.WriteLine("Olá, Mundo!");
 
         // 2. Variáveis

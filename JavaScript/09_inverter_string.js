@@ -28,7 +28,7 @@ for (let k = 0; k < texto.length; k++) {
     console.log(`[${k}] = "${texto[k]}"`);
 }
 
-// ---------- 4) Invertendo frase com palavras (sem arrays!) ----------
+// ---------- 4) Invertendo frase com palavras ----------
 const frase = "JavaScript é muito legal";
 let invertidaFrase = "";
 let palavra = "";

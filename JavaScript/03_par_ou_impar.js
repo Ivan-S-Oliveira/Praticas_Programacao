@@ -6,9 +6,9 @@
 const numero = 7;
 
 if (numero % 2 === 0) {
-    console.log(`O número ${numero} é PAR.`);
+    console.log(`O número ${numero} é Par!`);
 } else {
-    console.log(`O número ${numero} é ÍMPAR.`);
+    console.log(`O número ${numero} é Ímpar!`);
 }
 
 // ---------- Bônus: de 1 a 10 ----------

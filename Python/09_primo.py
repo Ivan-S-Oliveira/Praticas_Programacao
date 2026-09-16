@@ -33,9 +33,9 @@ def main():
         return
 
     if eh_primo(n):
-        print(f"{n} é PRIMO. ✅")
+        print(f"{n} é Primo!")
     else:
-        print(f"{n} NÃO é primo.")
+        print(f"{n} Não é Primo!")
 
     # Mostrar primos até 50
     print(f"\nPrimos até 50: {primos_ate(50)}")

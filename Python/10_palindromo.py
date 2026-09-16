@@ -33,7 +33,7 @@ def main():
     print("\n--- Exemplos ---")
     exemplos = ["arara", "Python", "A base do teto desaba", "ovo", "radar"]
     for ex in exemplos:
-        marca = "✅" if eh_palindromo_limpo(ex) else "❌"
+        marca = "é palíndromo" if eh_palindromo_limpo(ex) else "não é palíndromo"
         print(f"{marca} {ex}")
 
 if __name__ == "__main__":

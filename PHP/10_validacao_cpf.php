@@ -61,9 +61,9 @@ echo "Digite um CPF (com ou sem pontuação): ";
 $cpf = trim(fgets(STDIN));
 
 if (validarCpf($cpf)) {
-    echo "✅ CPF VÁLIDO: " . formatarCpf($cpf) . "\n";
+    echo "CPF Válido: " . formatarCpf($cpf) . "\n";
 } else {
-    echo "❌ CPF INVÁLIDO.\n";
+    echo "CPF Inválido.\n";
 }
 
 // Exemplos prontos
@@ -78,6 +78,6 @@ $exemplos = [
 ];
 
 foreach ($exemplos as $ex) {
-    $status = validarCpf($ex) ? "✅ válido" : "❌ inválido";
+    $status = validarCpf($ex) ? "Válido" : "Inválido";
     echo str_pad($ex, 20) . " → $status\n";
 }

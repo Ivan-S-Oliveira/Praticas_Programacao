@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 public class Fibonacci
 {
     static long FibIterativo(int n)

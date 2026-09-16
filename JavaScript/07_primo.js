@@ -23,9 +23,9 @@ if (numero < 2) {
 }
 
 if (ehPrimo) {
-    console.log(`\n${numero} é PRIMO. ✅`);
+    console.log(`\n${numero} é Primo!`);
 } else {
-    console.log(`\n${numero} NÃO é primo.`);
+    console.log(`\n${numero} Não é primo!`);
 }
 
 // ---------- 2) Listando primos até 50 ----------

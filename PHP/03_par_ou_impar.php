@@ -8,9 +8,9 @@ echo "Digite um número inteiro: ";
 $numero = (int) trim(fgets(STDIN));
 
 if ($numero % 2 == 0) {
-    echo "O número $numero é PAR.\n";
+    echo "O número $numero é Par!\n";
 } else {
-    echo "O número $numero é ÍMPAR.\n";
+    echo "O número $numero é Ímpar!\n";
 }
 
 // Bônus: verificar de 1 a 10

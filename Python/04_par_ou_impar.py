@@ -15,9 +15,9 @@ def main():
         return
 
     if eh_par(numero):
-        print(f"O número {numero} é PAR.")
+        print(f"O número {numero} é Par!")
     else:
-        print(f"O número {numero} é ÍMPAR.")
+        print(f"O número {numero} é Ímpar!")
 
     # Bônus: verificar vários números
     print("\n--- Verificando de 1 a 10 ---")

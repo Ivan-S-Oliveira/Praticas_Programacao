@@ -1,4 +1,3 @@
-using System;
 using System.Text;
 
 public class Palindromo
@@ -56,7 +55,7 @@ public class Palindromo
         string[] exemplos = { "arara", "Python", "A base do teto desaba", "ovo", "radar" };
         foreach (string ex in exemplos)
         {
-            string marca = EhPalindromoLimpo(ex) ? "✅" : "❌";
+            string marca = EhPalindromoLimpo(ex) ? "Sim ->" : "Não ->";
             Console.WriteLine($"{marca} {ex}");
         }
     }

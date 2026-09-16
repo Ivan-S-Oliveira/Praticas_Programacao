@@ -3,7 +3,7 @@
  * Conceitos: console.log, objeto process, variáveis globais do Node
  */
 
-// 1. O clássico
+// 1. Olá Mundo
 console.log("Olá, Node.js!");
 
 // 2. Informações do processo

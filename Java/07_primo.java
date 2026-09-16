@@ -21,9 +21,9 @@ class primo {
         int n = scanner.nextInt();
 
         if (ehPrimo(n)) {
-            System.out.println(n + " é PRIMO. ✅");
+            System.out.println(n + " é Primo!");
         } else {
-            System.out.println(n + " NÃO é primo.");
+            System.out.println(n + " Não é primo!");
         }
 
         // Primos até 50

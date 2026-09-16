@@ -1,5 +1,3 @@
-using System;
-
 public class MaiorNumero
 {
     public static void Main(string[] args)

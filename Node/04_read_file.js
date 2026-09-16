@@ -15,12 +15,12 @@ if (!fs.existsSync(arquivo)) {
 }
 
 // ---------- 1) Síncrono ----------
-console.log("--- Leitura SÍNCRONA ---");
+console.log("--- Leitura Síncrona ---");
 const conteudoSync = fs.readFileSync(arquivo, "utf-8");
 console.log(conteudoSync);
 
 // ---------- 2) Assíncrono com callback ----------
-console.log("--- Leitura ASSÍNCRONA (callback) ---");
+console.log("--- Leitura Assíncrona (callback) ---");
 fs.readFile(arquivo, "utf-8", (err, data) => {
     if (err) {
         console.error("Erro ao ler:", err.message);

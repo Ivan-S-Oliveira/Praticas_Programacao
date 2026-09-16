@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class ola_mundo {
     public static void main(String[] args) {
-        // 1. O clássico
+        // 1. Olá Mundo
         System.out.println("Olá, Mundo!");
 
         // 2. Variáveis

@@ -4,7 +4,7 @@
  * Conceitos: echo, variáveis, concatenação, entrada do usuário
  */
 
-// 1. O clássico
+// 1. Olá mmundo
 echo "Olá, Mundo!\n";
 
 // 2. Variáveis

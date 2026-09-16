@@ -27,9 +27,9 @@ def main():
         return
 
     if eh_bissexto(ano):
-        print(f"{ano} é BISSEXTO. 🗓️")
+        print(f"{ano} é Bissexto!")
     else:
-        print(f"{ano} NÃO é bissexto.")
+        print(f"{ano} Não é Bissexto!")
 
     # Testando exemplos conhecidos
     print("\n--- Testes ---")

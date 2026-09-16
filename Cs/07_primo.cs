@@ -1,5 +1,3 @@
-using System;
-
 public class Primo
 {
     static bool EhPrimo(int n)
@@ -23,14 +21,14 @@ public class Primo
 
         if (EhPrimo(n))
         {
-            Console.WriteLine($"{n} é PRIMO. ✅");
+            Console.WriteLine($"{n} é Primo!");
         }
         else
         {
-            Console.WriteLine($"{n} NÃO é primo.");
+            Console.WriteLine($"{n} Não é primo!");
         }
 
-        // Primos até 50
+        // Contagem de Primos até 50
         Console.Write("\nPrimos até 50: ");
         for (int i = 2; i <= 50; i++)
         {

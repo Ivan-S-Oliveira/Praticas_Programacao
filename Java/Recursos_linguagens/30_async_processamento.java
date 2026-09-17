@@ -132,21 +132,21 @@ class async_processamento {
         pool.awaitTermination(5, TimeUnit.SECONDS);
     }
 
-    // ---------- 5) Tratamento de erro com exceptionally ----------
+// ---------- 5) Tratamento de erro com exceptionally ----------
     static void exemploErro() throws Exception {
     System.out.println("=== Tratamento de erro assincrono ===");
     ExecutorService pool = Executors.newFixedThreadPool(2);
 
     boolean simularFalha = true;
 
-    CompletableFuture<String> futuro = CompletableFuture
-        .supplyAsync(() -> {
-            if (simularFalha) {
-                 throw new RuntimeException("falha simulada");
-            }
-            return "ok";
-        }, pool)
-        .exceptionally(ex -> "Erro tratado: " + ex.getMessage());
+        CompletableFuture<String> futuro = CompletableFuture
+            .supplyAsync(() -> {
+                if (simularFalha) {
+                    throw new RuntimeException("falha simulada");
+                }
+                return "ok";
+            }, pool)
+            .exceptionally(ex -> "Erro tratado: " + ex.getMessage());
 
         System.out.println("  Resultado: " + futuro.get());
 

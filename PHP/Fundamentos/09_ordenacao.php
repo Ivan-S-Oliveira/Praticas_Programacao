@@ -5,7 +5,7 @@
  */
 
 // Bubble Sort manual
-function bubbleSort($arr) {
+function bubbleSort(array $arr): array {
     $n = count($arr);
     for ($i = 0; $i < $n - 1; $i++) {
         for ($j = 0; $j < $n - 1 - $i; $j++) {
@@ -20,7 +20,7 @@ function bubbleSort($arr) {
 }
 
 // Selection Sort manual
-function selectionSort($arr) {
+function selectionSort(array $arr): array {
     $n = count($arr);
     for ($i = 0; $i < $n - 1; $i++) {
         $minIdx = $i;

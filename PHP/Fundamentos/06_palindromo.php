@@ -5,12 +5,12 @@
  */
 
 // Versão 1: usando strrev (nativo do PHP)
-function ehPalindromo($texto) {
+function ehPalindromo(string $texto): bool {
     return $texto === strrev($texto);
 }
 
 // Versão 2: comparando pontas
-function ehPalindromoPontas($texto) {
+function ehPalindromoPontas(string $texto): bool {
     $inicio = 0;
     $fim = strlen($texto) - 1;
     while ($inicio < $fim) {
@@ -24,7 +24,7 @@ function ehPalindromoPontas($texto) {
 }
 
 // Versão 3: ignorando espaços, pontuação e maiúsculas
-function ehPalindromoLimpo($texto) {
+function ehPalindromoLimpo(string $texto): bool {
     $limpo = preg_replace('/[^a-zA-Z0-9]/', '', $texto);
     $limpo = strtolower($limpo);
     return ehPalindromoPontas($limpo);

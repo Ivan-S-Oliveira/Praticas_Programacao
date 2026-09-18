@@ -4,7 +4,7 @@
  * Conceitos: arrays, for, recursão, implode
  */
 
-function fibIterativo($n) {
+function fibIterativo(int $n): int {
     $a = 0; $b = 1;
     for ($i = 0; $i < $n; $i++) {
         $temp = $a + $b;
@@ -14,12 +14,12 @@ function fibIterativo($n) {
     return $a;
 }
 
-function fibRecursivo($n) {
+function fibRecursivo(int $n): int {
     if ($n <= 1) return $n;
     return fibRecursivo($n - 1) + fibRecursivo($n - 2);
 }
 
-function fibSequencia($quantidade) {
+function fibSequencia(int $quantidade): array {
     $sequencia = [];
     $a = 0; $b = 1;
     for ($i = 0; $i < $quantidade; $i++) {

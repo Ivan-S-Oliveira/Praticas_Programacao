@@ -4,11 +4,11 @@
  * Conceitos: if/elseif, switch, operadores, validação
  */
 
-function somar($a, $b) { return $a + $b; }
-function subtrair($a, $b) { return $a - $b; }
-function multiplicar($a, $b) { return $a * $b; }
+function somar(float $a, float $b): float { return $a + $b; }
+function subtrair(float $a, float $b): float { return $a - $b; }
+function multiplicar(float $a, float $b): float { return $a * $b; }
 
-function dividir($a, $b) {
+function dividir(float $a, float $b): float|string {
     if ($b == 0) {
         return "Erro: divisão por zero!";
     }

@@ -7,7 +7,7 @@
  * os 2 últimos são dígitos verificadores calculados por um algoritmo.
  */
 
-function validarCpf($cpf) {
+function validarCpf(string $cpf): bool {
     // Remove tudo que não for dígito
     $cpf = preg_replace('/\D/', '', $cpf);
 
@@ -48,7 +48,7 @@ function validarCpf($cpf) {
     return true;
 }
 
-function formatarCpf($cpf) {
+function formatarCpf(string $cpf): string {
     $cpf = preg_replace('/\D/', '', $cpf);
     if (strlen($cpf) !== 11) return $cpf;
     return substr($cpf, 0, 3) . '.' .

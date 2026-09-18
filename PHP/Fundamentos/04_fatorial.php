@@ -4,7 +4,7 @@
  * Conceitos: for, while, recursão
  */
 
-function fatorialIterativo($n) {
+function fatorialIterativo(int $n): int {
     if ($n < 0) return -1;
     $resultado = 1;
     for ($i = 2; $i <= $n; $i++) {
@@ -13,7 +13,7 @@ function fatorialIterativo($n) {
     return $resultado;
 }
 
-function fatorialWhile($n) {
+function fatorialWhile(int $n): int {
     if ($n < 0) return -1;
     $resultado = 1;
     while ($n > 1) {
@@ -23,7 +23,7 @@ function fatorialWhile($n) {
     return $resultado;
 }
 
-function fatorialRecursivo($n) {
+function fatorialRecursivo(int $n): int {
     if ($n < 0) return -1;
     if ($n == 0 || $n == 1) return 1;
     return $n * fatorialRecursivo($n - 1);

@@ -1,3 +1,5 @@
+using System;
+
 public class ParOuImpar
 {
     public static void Main(string[] args)

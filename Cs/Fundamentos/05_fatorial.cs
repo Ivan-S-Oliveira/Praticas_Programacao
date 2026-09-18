@@ -1,3 +1,5 @@
+using System;
+
 public class Fatorial
 {
     static long FatorialIterativo(int n)

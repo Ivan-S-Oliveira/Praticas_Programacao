@@ -1,3 +1,5 @@
+using System;
+
 public class Primo
 {
     static bool EhPrimo(int n)

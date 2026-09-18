@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="claro">
+<head>
+    <meta charset="UTF-8">
+    <title>29 - Dark Mode</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --texto: #222222;
+            --card: #f4f4f4;
+            --borda: #dddddd;
+            --primaria: #0a66c2;
+        }
+
+        html[data-tema="escuro"] {
+            --bg: #1a1a1a;
+            --texto: #eeeeee;
+            --card: #2a2a2a;
+            --borda: #444444;
+            --primaria: #58a6ff;
+        }
+
+        body {
+            font-family: sans-serif;
+            background: var(--bg);
+            color: var(--texto);
+            max-width: 600px;
+            margin: 20px auto;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--borda);
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+
+        button {
+            background: var(--primaria);
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dark Mode</h1>
+
+    <div class="card">
+        <p>Este tema e aplicado via CSS variables no elemento raiz.</p>
+        <p id="status-tema"></p>
+        <button id="toggle-tema">Alternar tema</button>
+    </div>
+
+    <div class="card">
+        <p>Abra esta pagina em duas abas e alterne o tema em uma. A outra sincroniza automaticamente.</p>
+    </div>
+
+    <script src="29_dark_mode.js" defer></script>
+</body>
+</html>

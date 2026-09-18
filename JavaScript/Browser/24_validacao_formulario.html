@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>24 - Validacao de Formulario</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: 20px auto; }
+        label { display: block; margin-top: 12px; font-weight: bold; }
+        input { width: 100%; padding: 8px; box-sizing: border-box; }
+        input.invalido { border: 2px solid #c00; background: #fee; }
+        .erro { color: #c00; font-size: 0.85em; min-height: 18px; display: block; }
+        #msg-geral { margin-top: 15px; font-weight: bold; }
+        button { margin-top: 15px; padding: 8px 16px; }
+    </style>
+</head>
+<body>
+    <h1>Cadastro com Validacao</h1>
+
+    <form id="form" novalidate>
+        <label>Nome</label>
+        <input type="text" name="nome">
+        <span class="erro" data-erro="nome"></span>
+
+        <label>E-mail</label>
+        <input type="text" name="email">
+        <span class="erro" data-erro="email"></span>
+
+        <label>Senha</label>
+        <input type="password" name="senha">
+        <span class="erro" data-erro="senha"></span>
+
+        <label>Confirmar senha</label>
+        <input type="password" name="confirmacao">
+        <span class="erro" data-erro="confirmacao"></span>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <p id="msg-geral"></p>
+
+    <script src="24_validacao_formulario.js" defer></script>
+</body>
+</html>

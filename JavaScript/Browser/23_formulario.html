@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>23 - Formulario</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 20px auto; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input, select { padding: 6px; }
+        fieldset { margin-top: 10px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Cadastro</h1>
+
+    <form id="cadastro">
+        <label>Nome
+            <input type="text" name="nome" required>
+        </label>
+
+        <label>E-mail
+            <input type="email" name="email" required>
+        </label>
+
+        <fieldset>
+            <legend>Genero</legend>
+            <label><input type="radio" name="genero" value="F"> Feminino</label>
+            <label><input type="radio" name="genero" value="M"> Masculino</label>
+            <label><input type="radio" name="genero" value="O"> Outro</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interesses</legend>
+            <label><input type="checkbox" name="interesses" value="js"> JavaScript</label>
+            <label><input type="checkbox" name="interesses" value="py"> Python</label>
+            <label><input type="checkbox" name="interesses" value="php"> PHP</label>
+        </fieldset>
+
+        <label>Pais
+            <select name="pais">
+                <option value="br">Brasil</option>
+                <option value="pt">Portugal</option>
+                <option value="us">Estados Unidos</option>
+            </select>
+        </label>
+
+        <p><button type="submit">Enviar</button></p>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="23_formulario.js" defer></script>
+</body>
+</html>

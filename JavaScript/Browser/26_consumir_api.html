@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>26 - Consumir API</title>
+    <style>
+        body { font-family: sans-serif; max-width: 700px; margin: 20px auto; }
+        button { padding: 8px 14px; margin-right: 6px; }
+        #status { margin: 12px 0; font-weight: bold; }
+        #status.erro { color: #c00; }
+        .usuario { padding: 6px 10px; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <h1>Usuarios da API</h1>
+
+    <button id="btn-todos">Carregar todos</button>
+    <button id="btn-um">Carregar id 5</button>
+    <button id="btn-paralelo">Carregar 1, 2 e 3 em paralelo</button>
+
+    <p id="status"></p>
+    <ul id="usuarios"></ul>
+
+    <script src="26_consumir_api.js" defer></script>
+</body>
+</html>
